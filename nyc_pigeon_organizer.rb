@@ -1,5 +1,5 @@
 def nyc_pigeon_organizer(data)
-  data.
+  data.each_with_object
 end
 
 pigeon_data = {
