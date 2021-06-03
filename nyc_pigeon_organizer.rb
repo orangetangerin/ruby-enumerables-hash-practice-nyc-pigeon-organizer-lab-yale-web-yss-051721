@@ -1,7 +1,11 @@
 def nyc_pigeon_organizer(data)
   data.each_with_object({}) do |(key, value), final_array|
-    value.each do |inner_key, |
-      inner_key.each
+    value.each do |inner_key, names|
+      inner_key.each do |name|
+        if !final_array[name]
+          final_array[name] = {}
+        end
+        if !final_array[name][key]
 end
 
 pigeon_data = {
